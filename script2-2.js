@@ -65,7 +65,7 @@ decreaseBtn.addEventListener('click', () => {
 updateTotalPrice();
 
 buyBtn.addEventListener('click', () => {
-    if (confirm(`[필수 확인]\n9월 19일(금) [19:30]\n${count}장의 티켓을 구매 하십니까?`)) {
+    if (confirm(`[✅필수 확인❗❗❗]\n9월 19일(금) [19:30]\n${count}장의 티켓을 구매 하십니까?`)) {
         window.open(links[count - 1], '_blank', 'width=500,height=600');
     }
 });
