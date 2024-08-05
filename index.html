@@ -7,14 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-        <div class="controls">
-            <button id="decreaseBtn">➖</button>
-            <button id="increaseBtn">➕</button>
-        </div>
-        <div class="circle" id="ticketCount">1</div>
-        <button id="buyBtn">구매하기</button>
+    <div class="main-container">
+<div class="left-container">
+    <div class="slider">
+        <img src="1.png" alt="결제 방법 설명 1" class="slider-image">
     </div>
+    <div class="slider-dots"></div>
+    <div class="slider-buttons">
+        <button class="prev-btn">이전</button>
+        <button class="next-btn">다음</button>
+    </div>
+</div>
+
+
+
+        <div class="right-container">
+    <h1>티켓 선예매</h1>
+        <div class="controls">
+<button id="decreaseBtn" aria-label="티켓 수량 감소">➖</button>
+<button id="increaseBtn" aria-label="티켓 수량 증가">➕</button>
+        </div>
+        <div class="circle" id="ticketCount">1장</div>
+<div id="totalPrice">총 금액: 6,000원</div>
+<button id="buyBtn">티켓 구매하기</button>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
