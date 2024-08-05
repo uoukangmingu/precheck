@@ -77,7 +77,7 @@ const nextBtn = document.querySelector('.next-btn');
 const dotsContainer = document.querySelector('.slider-dots');
 let currentImage = 1;
 
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= 5; i++) {
     const dot = document.createElement('span');
     dot.classList.add('dot');
     dot.addEventListener('click', () => {
@@ -98,12 +98,12 @@ function updateImage() {
 updateImage();
 
 prevBtn.addEventListener('click', () => {
-    currentImage = currentImage > 1 ? currentImage - 1 : 4;
+    currentImage = currentImage > 1 ? currentImage - 1 : 5;
     updateImage();
 });
 
 nextBtn.addEventListener('click', () => {
-    currentImage = currentImage < 4 ? currentImage + 1 : 1;
+    currentImage = currentImage < 5 ? currentImage + 1 : 1;
     updateImage();
 });
 
@@ -112,9 +112,9 @@ let slideInterval;
 
 function startSlideShow() {
     slideInterval = setInterval(() => {
-        currentImage = currentImage < 4 ? currentImage + 1 : 1;
+        currentImage = currentImage < 5 ? currentImage + 1 : 1;
         updateImage();
-    }, 5000); // 5초마다 이미지 변경
+    }, 3000); // 5초마다 이미지 변경
 }
 
 function stopSlideShow() {
@@ -161,3 +161,11 @@ window.onclick = function(event) {
         discountPopup.style.display = "none";
     }
 }
+
+window.addEventListener('load', function() {
+  window.scrollTo(0, document.body.scrollHeight);
+});
+
+window.addEventListener('hashchange', function() {
+  window.scrollTo(0, document.body.scrollHeight);
+});
