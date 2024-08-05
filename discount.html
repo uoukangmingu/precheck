@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>티켓 예매 프로그램</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="main-container">
+       <div class="left-container">
+          <div class="slider">
+             <img src="1.png" alt="결제 방법 설명 1" class="slider-image">
+          </div>
+          <div class="slider-dots"></div>
+          <div class="slider-buttons">
+             <button class="prev-btn">이전</button>
+             <button class="next-btn">다음</button>
+         </div>
+       </div>
+       <div class="right-container">
+          <h1>할인권 적용 완료!!<br>(장당 1,000원 할인)</h1>
+            <h4>※ 최대 10장까지 구매 가능<br>※ 티켓 구매 시 입력하신 번호로 문자 발송 예정<br>ㅤ(소요시간 1~2일)</h4>        
+       <div class="controls">
+            <button id="decreaseBtn" aria-label="티켓 수량 감소">➖</button>
+            <button id="increaseBtn" aria-label="티켓 수량 증가">➕</button>
+       </div>
+       <div class="circle" id="ticketCount">1장</div>
+<div id="totalPrice">총 금액: 5,000원</div>
+<button id="buyBtn">티켓 구매하기</button>
+    </div>
+</div>
+    <script src="script2.js"></script>
+</body>
+</html>
