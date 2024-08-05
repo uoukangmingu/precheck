@@ -257,3 +257,36 @@ button:disabled:hover {
                 inset -5px -5px 10px #3a3a3a;
     color: #e0e0e0;
 }
+
+.additional-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 3px;
+    font-size: 75%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button:nth-child(1) {
+    background: linear-gradient(145deg, #3498db, #2980b9);
+}
+
+.nav-button:nth-child(1):hover {
+    background: linear-gradient(145deg, #2980b9, #3498db);
+    transform: translateY(-2px);
+}
+
+.nav-button:not(:nth-child(1)) {
+    background: #0F353D;
+    cursor: pointer;
+    opacity: 0.9;
+}

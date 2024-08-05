@@ -86,7 +86,7 @@ button {
 
 button:hover {
     box-shadow: inset 5px 5px 10px #d9d9d9, 
-                inset -5px -5px 10px #ffffff;
+                inset -5px -5px 10px #aaaaaa;
     background: linear-gradient(145deg, #2980b9, #3498db);
     transform: translateY(-2px);
 }
@@ -243,77 +243,20 @@ button:disabled:hover {
   }
 }
 
-#discountBtn {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    background: linear-gradient(145deg, #FF4500, #FF6347);
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+#buyBtn {
+    background: #2e7d32;
 }
 
-#discountBtn:hover {
-    background: linear-gradient(145deg, #FF6347, #FF4500);
-    transform: translateY(-2px);
+#buyBtn:hover {
+    background: #1b5e20;
 }
-
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+.circle {
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1), 
+                inset -5px -5px 10px #3a3a3a;
+    color: #e0e0e0;
 }
-
-.popup-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#discountCode {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-#applyDiscount {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
 
 .additional-buttons {
     display: flex;
@@ -333,16 +276,16 @@ button:disabled:hover {
     transition: all 0.3s ease;
 }
 
-.nav-button:first-child {
+.nav-button:nth-child(2) {
     background: linear-gradient(145deg, #3498db, #2980b9);
 }
 
-.nav-button:first-child:hover {
+.nav-button:nth-child(2):hover {
     background: linear-gradient(145deg, #2980b9, #3498db);
     transform: translateY(-2px);
 }
 
-.nav-button:not(:first-child) {
+.nav-button:not(:nth-child(2)) {
     background: #0F353D;
     cursor: pointer;
     opacity: 0.9;
