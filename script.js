@@ -133,3 +133,31 @@ sliderImage.onerror = function() {
     console.error('이미지 로딩 실패:', this.src);
     this.src = 'error-image.png'; // 에러 시 표시할 기본 이미지
 };
+
+const discountBtn = document.getElementById('discountBtn');
+const discountPopup = document.getElementById('discountPopup');
+const closeBtn = document.getElementsByClassName('close')[0];
+const applyDiscountBtn = document.getElementById('applyDiscount');
+
+discountBtn.onclick = function() {
+    discountPopup.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+    discountPopup.style.display = "none";
+}
+
+applyDiscountBtn.onclick = function() {
+    const discountCode = document.getElementById('discountCode').value;
+    if(discountCode === "1978") {
+        window.location.href = 'discount.html';
+    } else {
+        alert("유효하지 않은 할인 코드입니다.");
+    }
+}
+
+window.onclick = function(event) {
+    if (event.target == discountPopup) {
+        discountPopup.style.display = "none";
+    }
+}
