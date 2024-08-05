@@ -9,16 +9,16 @@ const buyBtn = document.getElementById('buyBtn');
 decreaseBtn.disabled = true;
 
 const links = [
-    'https://payapplite.com/l/DuimwY',
-    'https://payapplite.com/l/NVchMT',
-    'https://payapplite.com/l/mf1g6G',
-    'https://payapplite.com/l/ZbU9p6',
-    'https://payapplite.com/l/uXZCOa',
-    'https://payapplite.com/l/DFK1MR',
-    'https://payapplite.com/l/BVnDpu',
-    'https://payapplite.com/l/PQ8Bdo',
-    'https://payapplite.com/l/PeCcci',
-    'https://payapplite.com/l/3leHHb'
+'https://payapplite.com/l/TPxaSC',
+'https://payapplite.com/l/f0mSAx',
+'https://payapplite.com/l/4NE66Z',
+'https://payapplite.com/l/jsPuyg',
+'https://payapplite.com/l/kg1U6T',
+'https://payapplite.com/l/iEfWe3',
+'https://payapplite.com/l/qGT2ZX',
+'https://payapplite.com/l/jeMKtW',
+'https://payapplite.com/l/PmYqp6',
+'https://payapplite.com/l/N33wRb'
 ];
 
 function updateCount() {
@@ -65,7 +65,7 @@ decreaseBtn.addEventListener('click', () => {
 updateTotalPrice();
 
 buyBtn.addEventListener('click', () => {
-    if (confirm(`[필수 확인]\n9월 18일(목) [19:30]\n${count}장의 티켓을 구매 하십니까?`)) {
+    if (confirm(`[필수 확인]\n9월 20일(토) [14:00]\n${count}장의 티켓을 구매 하십니까?`)) {
         window.open(links[count - 1], '_blank', 'width=500,height=600');
     }
 });

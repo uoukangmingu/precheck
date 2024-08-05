@@ -1,7 +1,7 @@
 ﻿let count = 1;
 const ticketCount = document.getElementById('ticketCount');
 const totalPriceElement = document.getElementById('totalPrice');
-const ticketPrice = 6000;
+const ticketPrice = 5000;
 const decreaseBtn = document.getElementById('decreaseBtn');
 const increaseBtn = document.getElementById('increaseBtn');
 const buyBtn = document.getElementById('buyBtn');
@@ -9,16 +9,16 @@ const buyBtn = document.getElementById('buyBtn');
 decreaseBtn.disabled = true;
 
 const links = [
-    'https://payapplite.com/l/DuimwY',
-    'https://payapplite.com/l/NVchMT',
-    'https://payapplite.com/l/mf1g6G',
-    'https://payapplite.com/l/ZbU9p6',
-    'https://payapplite.com/l/uXZCOa',
-    'https://payapplite.com/l/DFK1MR',
-    'https://payapplite.com/l/BVnDpu',
-    'https://payapplite.com/l/PQ8Bdo',
-    'https://payapplite.com/l/PeCcci',
-    'https://payapplite.com/l/3leHHb'
+'https://payapplite.com/l/pHBG1D',
+'https://payapplite.com/l/ilistM',
+'https://payapplite.com/l/Z131GW',
+'https://payapplite.com/l/1h4sju',
+'https://payapplite.com/l/22Gjlo',
+'https://payapplite.com/l/hCXr3P',
+'https://payapplite.com/l/NhHrwX',
+'https://payapplite.com/l/UryWvw',
+'https://payapplite.com/l/f3tl4q',
+'https://payapplite.com/l/VhiBv0'
 ];
 
 function updateCount() {
@@ -65,7 +65,7 @@ decreaseBtn.addEventListener('click', () => {
 updateTotalPrice();
 
 buyBtn.addEventListener('click', () => {
-    if (confirm(`[필수 확인]\n9월 18일(목) [19:30]\n${count}장의 티켓을 구매 하십니까?`)) {
+    if (confirm(`[필수 확인]\n9월 20일(토) [18:00]\n${count}장의 티켓을 구매 하십니까?`)) {
         window.open(links[count - 1], '_blank', 'width=500,height=600');
     }
 });
@@ -133,31 +133,3 @@ sliderImage.onerror = function() {
     console.error('이미지 로딩 실패:', this.src);
     this.src = 'error-image.png'; // 에러 시 표시할 기본 이미지
 };
-
-const discountBtn = document.getElementById('discountBtn');
-const discountPopup = document.getElementById('discountPopup');
-const closeBtn = document.getElementsByClassName('close')[0];
-const applyDiscountBtn = document.getElementById('applyDiscount');
-
-discountBtn.onclick = function() {
-    discountPopup.style.display = "block";
-}
-
-closeBtn.onclick = function() {
-    discountPopup.style.display = "none";
-}
-
-applyDiscountBtn.onclick = function() {
-    const discountCode = document.getElementById('discountCode').value;
-    if(discountCode === "1978") {
-        window.location.href = 'discount.html';
-    } else {
-        alert("유효하지 않은 할인 코드입니다.");
-    }
-}
-
-window.onclick = function(event) {
-    if (event.target == discountPopup) {
-        discountPopup.style.display = "none";
-    }
-}
