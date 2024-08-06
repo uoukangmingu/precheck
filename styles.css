@@ -347,3 +347,39 @@ button:disabled:hover {
     cursor: pointer;
     opacity: 0.9;
 }
+
+#customText {
+    font-size: min(max(14px, 2vw), 24px);
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 15px;
+    padding: 10px;
+    background: linear-gradient(45deg, #f3f3f3, #ddd);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#customText::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    transform: translateX(-100%);
+    animation: wave 2s linear infinite;
+}
