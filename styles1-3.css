@@ -305,7 +305,7 @@ button:disabled:hover {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.4);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     overflow: hidden;
