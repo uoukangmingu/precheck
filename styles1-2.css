@@ -392,16 +392,16 @@ max-height: 90vh;
     transition: all 0.3s ease;
 }
 
-.nav-button:first-child {
+.nav-button:nth-child(2) {
     background: linear-gradient(145deg, #3498db, #2980b9);
 }
 
-.nav-button:first-child:hover {
+.nav-button:nth-child(2):hover {
     background: linear-gradient(145deg, #2980b9, #3498db);
     transform: translateY(-2px);
 }
 
-.nav-button:not(:first-child) {
+.nav-button:not(:nth-child(2)) {
     background: #0F353D;
     cursor: pointer;
     opacity: 0.9;
