@@ -77,7 +77,7 @@ const nextBtn = document.querySelector('.next-btn');
 const dotsContainer = document.querySelector('.slider-dots');
 let currentImage = 1;
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 6; i++) {
     const dot = document.createElement('span');
     dot.classList.add('dot');
     dot.addEventListener('click', () => {
