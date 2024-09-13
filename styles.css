@@ -367,7 +367,7 @@ max-height: 90vh;
 
 .nav-button:not(:nth-child(1)) {
     background: #0F353D;
-    cursor: not-allowed;
+    cursor: pointer;
     opacity: 0.9;
 }
 
