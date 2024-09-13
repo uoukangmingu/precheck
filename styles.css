@@ -352,7 +352,7 @@ max-height: 90vh;
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: not-allowed;
     transition: all 0.3s ease;
 }
 
